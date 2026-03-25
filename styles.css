@@ -447,7 +447,7 @@ p:last-child {
   color: var(--color-primary);
   font-size: 1.25rem;
   font-weight: 700;
-  min-width: 160px;
+  min-width: 250px;
 }
 
 .steps span {
@@ -806,12 +806,12 @@ p:last-child {
 @media (max-width: 767px) {
   .steps strong {
     min-width: unset;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     display: block;
   }
   .steps li {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 }
 
