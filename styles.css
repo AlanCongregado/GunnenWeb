@@ -568,14 +568,16 @@ p:last-child {
 .agreement-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.4s ease-in-out;
   padding: 0 1.5rem 0 5.2rem; /* Indent under icon */
 }
 
 .agreement-card.active .agreement-body {
-  max-height: 500px;
+  max-height: 300px;
+  opacity: 1;
   padding: 0 1.5rem 1.5rem 5.2rem;
-  transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+  transition: max-height 0.5s ease-in-out, opacity 0.6s ease-in-out, padding 0.4s ease-in-out;
 }
 
 .agreement-body p {
@@ -1051,6 +1053,10 @@ p:last-child {
 
 @media (max-width: 768px) {
   .carousel-track-container {
-    height: 300px;
+    height: 400px;
+  }
+  .carousel-image {
+    object-fit: contain;
+    background-color: var(--color-surface-alt);
   }
 }
